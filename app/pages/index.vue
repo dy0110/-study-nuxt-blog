@@ -29,7 +29,7 @@ export default {
     if (store.getters["user"]) {
       redirect("/posts/");
     }
-    console.log(store._actions)
+    console.log(store.getters["user"])
     return {
       isCreateMode: false,
       formData: {
